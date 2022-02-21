@@ -1,0 +1,74 @@
+#container{
+    display: flex;
+    
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  #main > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    max-height: 600px;
+    min-height: 600px;
+
+
+  }
+  #main div img{
+    width: 100%;
+    max-height: 300px;
+    border: 1px solid black;
+
+  }
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+    border: 1px solid black;
+    padding:0px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 140px;
+}
+#sidebar ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    margin: 20px;
+
+}
+#sidebar input{
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 200px;
+}
+

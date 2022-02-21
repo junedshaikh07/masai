@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <style>
+      #main > div{
+        width: 800px;
+        margin-left: 20%;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="sidebar">
+      
+      </div>
+
+      <div id="main">
+       
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module"> 
+let arr = [];
+let mdiv = document.getElementById("main");
+  let sideD = document.getElementById("sidebar");
+  import sidebar from "/components/sidebar.js";
+  import{apiCall,appendArticles} from "/scripts/main.js";
+  sideD.innerHTML = sidebar();
+  let itm = JSON.parse(localStorage.getItem('article'));
+  arr.push(itm);
+  appendArticles(arr,mdiv)
+  
+</script>
